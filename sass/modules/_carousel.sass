@@ -1,0 +1,96 @@
+$carousel-img: "/img/jumbotron_bg.png"
+$text-color1: #fff
+$text-btn-color: #242A5E
+
+=slide-background-img($img-url)
+    width: 100%
+    height: 100%
+    margin: 0
+    background-image: url($img-url)
+
+.carouselItem1-container
+    +slide-background-img($carousel-img)
+    color: $text-color1
+
+.carouselItem2-container
+    +slide-background-img($carousel-img)
+    color: $text-color1
+
+.carouselItem3-container
+    +slide-background-img($carousel-img)
+    color: $text-color1
+
+.carouselItem1-container-wrap
+    text-align: center !important
+
+.carouselItem2-container-wrap
+    @extend .carouselItem1-container-wrap
+
+.carouselItem3-container-wrap
+    @extend .carouselItem1-container-wrap
+
+.carouselItem1-container-wrap-vertically-center
+    padding: 120px 0;
+
+.carouselItem2-container-wrap-vertically-center
+    @extend .carouselItem1-container-wrap-vertically-center
+
+.carouselItem3-container-wrap-vertically-center
+    @extend .carouselItem1-container-wrap-vertically-center
+
+.carouselItem1-container-text_subtitle
+    padding-top: 20px
+    margin-bottom: 6px
+    font-size: 1.23rem
+
+.carouselItem2-container-text_subtitle
+    @extend .carouselItem1-container-text_subtitle
+
+.carouselItem3-container-text_subtitle
+    @extend .carouselItem1-container-text_subtitle
+
+.carouselItem1-container-text__title
+    font-size: 48px
+    font-weight: 500
+    margin-bottom: 32px
+    line-height: 60px
+    letter-spacing: 0.3rem
+    // font-weight: bold
+
+.carouselItem2-container-text__title, .carouselItem3-container-text__title
+    @extend .carouselItem1-container-text__title
+
+.btn-primary-inv
+    background-color: $text-color1
+    border-color: $text-color1
+    box-shadow: 0 0 8px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.075)
+
+.btn-lg, .btn-group-lg>.btn
+    padding: 16px 30px
+    font-size: 1.076rem
+    line-height: 1.23rem
+    border-radius: 0.3rem
+
+.btn
+    display: inline-block
+    font-weight: 400
+    color: $text-btn-color
+    text-align: center
+    vertical-align: middle
+    user-select: 
+    border: 1px solid transparent
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+
+.carousel-indicators
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 15
+    display: flex
+    justify-content: center
+    padding-left: 0
+    margin-right: 15%
+    margin-left: 15%
+    list-style: none
+    clear: both

@@ -1,0 +1,72 @@
+$top-bg-color: #283C50
+$bottom-bg-color: #fff
+$new-link-color: #242A5E
+    
+.navbar
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: spcae-between
+    padding: 0.25rem 1rem
+    font-size: 0.846rem
+    // width: 100%
+
+.top-navbar
+    background-color: $top-bg-color !important
+    color: white
+
+.top-navbar-container
+    border: 0
+    font-size: 85%
+    vertical-align: baseline
+    display: inline-flex
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    align-items: center
+    width: 1325px
+    height: 35px
+    max-width: 1140px
+    justify-content: space-between !important
+    
+    .top-navbar-container__left
+        // padding-left: 2rem
+        max-width: 540px
+    .ml-left
+        margin-left: auto !important
+
+    .top-navbar-container__right
+        display: flex
+        // flex-direction: column
+        flex-direction: row
+        padding-right: 2rem 
+        margin-bottom: 0
+        list-style: none
+        text-align: right
+
+.nav-link
+    text-decoration: none
+    color: white
+    display: block
+    // margin-right: 10px
+    padding: 0.3rem 0.5rem
+    background-color: trasparent
+
+.nav-link__changed
+    color: $new-link-color
+
+.bottom-navbar
+    background-color: $bottom-bg-color
+    // padding: 16px 0
+    border-bottom: 2px solid #f2f2f2
+    .bottom-navbar-container
+        @extend .top-navbar-container
+        height: 65px
+
+        .bottom-navbar-container__left
+            @extend .top-navbar-container__left
+            padding-left: 1rem
+        .bottom-navbar-container__right
+            @extend .top-navbar-container__right
