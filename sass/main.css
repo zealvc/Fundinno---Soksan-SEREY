@@ -87,6 +87,19 @@ ol {
           padding-inline-start: 40px;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.615rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h2 {
+  font-size: 1.846rem;
+  line-height: 3.076rem;
+}
+
 .navbar {
   position: relative;
   display: -webkit-box;
@@ -224,11 +237,16 @@ ol {
   letter-spacing: 0.3rem;
 }
 
-.btn-primary-inv {
+.btn-primary-inv, .btn-primary {
   background-color: #fff;
   border-color: #fff;
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary-inv:hover, .btn-primary:hover {
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -249,6 +267,17 @@ ol {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #00A0E9;
+  border-color: #00A0E9;
+}
+
+.btn-primary:hover {
+  background-color: #35677d;
+  border-color: #35677d;
 }
 
 .carousel-indicators {
@@ -321,21 +350,10 @@ ol {
   color: #242A5E !important;
 }
 
-@media (max-width: 1800px) and (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (max-width: 1199.99px) and (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 991.99px) and (min-width: 768px) {
-  .container {
-    max-width: 720px;
+@media (min-width: 576px) {
+  .about {
+    background-image: url("/img/handsake_pic.png");
+    background-size: cover;
   }
 }
 
@@ -354,15 +372,90 @@ ol {
   }
 }
 
+@media (min-width: 768px) {
+  .col-md-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66666%;
+            flex: 0 0 41.66666%;
+    max-width: 41.66666%;
+  }
+  .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.33333%;
+            flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+}
+
+@media (max-width: 991.99px) and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .container {
+    max-width: 960pxss;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 .about {
   padding: 88px 0;
   border-bottom: 2px solid #f2f2f2;
 }
 
-@media (min-width: 576px) and (max-width: 1800px) {
-  .about {
-    background-image: url("/img/handsake_pic.png");
-    background-size: cover;
-  }
+.col-md-5, .col-md-7 {
+  position: relative;
+  width: 100%;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.c-primary {
+  color: #00A0E9;
+}
+
+.pickups {
+  padding: 88px 0;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.pickups .cards {
+  margin-bottom: 3.6rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-primary {
+  color: #00A0E9;
 }
 /*# sourceMappingURL=main.css.map */

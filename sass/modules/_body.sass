@@ -1,0 +1,126 @@
+// tallie section
+.tallies 
+    text-align: center
+    border-bottom: 2px solid $border-bottom-color
+
+    .tally:not(:last-child)
+        border-right: 2px solid $border-right-color
+    .tally
+        padding: 32px 0
+
+        .value
+            font-size: 1.23rem
+            font-weight: 600
+        
+        .title
+            font-size: 0.769rem
+
+.container
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+
+.row
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+
+.col
+    flex-basis: 0
+    flex-grow: 1
+    max-width: 100%
+
+.text-muted
+    font-weight: 300
+    color: #242A5E !important
+
+//container responsive
+
+//col-xs
+// @media (max-width: 576px)
+
+
+//col-sm
+@media (min-width: 576px)
+    .about
+        background-image: url($bg-image-about)
+        background-size: cover
+
+@media (max-width: 767.98px)
+    .tallies
+        .tally
+            padding: 16px 0
+
+    .container
+        padding: 0 2rem
+
+@media (max-width: 767.99px) and (min-width: 576px)
+    .container
+        max-width: 540px
+
+//col-md
+@media (min-width: 768px)
+    .col-md-5
+        flex: 0 0 41.66666%
+        max-width: 41.66666%
+
+    .col-md-6
+        flex: 0 0 50%
+        max-width: 50%
+
+    .col-md-7
+        flex: 0 0 58.33333%
+        max-width: 58.33333%
+
+@media (max-width: 991.99px) and (min-width: 768px)
+    .container
+        max-width: 720px
+
+//col-lg
+@media (min-width: 992px)
+    .col-lg-4
+        flex: 0 0 33.33333%
+        max-width: 33.33333%
+
+@media (min-width: 992px) and (max-width: 1199.99px)
+    .container
+        max-width: 960pxss
+
+//col-xl
+@media (min-width: 1200px)
+    .container
+        max-width: 1140px
+
+//about section
+.about
+    padding: 88px 0
+    border-bottom: 2px solid $border-bottom-color
+
+.col-md-5, .col-md-7
+    position: relative
+    width: 100%
+    // padding-right: 15px
+    // padding-left: 15px
+
+.mb-30
+    margin-bottom: 30px !important
+
+.mb-15
+    margin-bottom: 15px !important
+
+.c-primary
+    color: $primary-text-color
+
+//pickups section    
+.pickups
+    padding: 88px 0
+    border-bottom: 2px solid $border-bottom-color
+    .cards
+        margin-bottom: 3.6rem
+
+.text-center
+    text-align: center !important
+
+.text-primary
+    color: $primary-text-color
+
